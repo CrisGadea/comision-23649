@@ -1,23 +1,19 @@
 public class Animal {
+    protected String nombre;
+    protected Integer edad;
 
-    String tipo;
-    String nombre;
-    Integer edad;
-
-    public Animal(String tipo, String nombre, Integer edad){
-        this.tipo = tipo;
+    public Animal(String nombre, Integer edad){
         this.nombre = nombre;
         this.edad = edad;
     }
 
     public String moverse(){
-        return "El animal: " + this.tipo + " se está moviendo";
+        return "El animal: se está moviendo";
     }
 
     @Override
     public String toString() {
         return "Animal{" +
-                "tipo='" + tipo + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", edad=" + edad +
                 '}';
